@@ -1,3 +1,4 @@
+/* eslint-disable no-process-exit*/
 'use strict';
 var mocha = require('gulp-mocha');
 
@@ -11,6 +12,9 @@ module.exports = function(gulp, conf) {
             }))
             .on('error', function() {
                 gulp.fail = true;
+            })
+            .once('end', function() {
+                process.exit();
             });
     });
 };
