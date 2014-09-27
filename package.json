@@ -1,0 +1,41 @@
+{
+  "name": "catbox-redis-master-slave",
+  "description": "Master-slave replicated Redis adapter for catbox",
+  "version": "0.0.1",
+  "author": "Lei Pan <superpan@gmail.com> (http://github.com/superpan)",
+  "repository": "git://github.com/creativelive/catbox-redis-master-slave",
+  "main": "index.js",
+  "scripts": {
+    "test": "alias gulp='node_modules/gulp/bin/gulp.js';gulp lint && gulp test",
+    "beautify": "node_modules/gulp/bin/gulp.js beautify --write"
+  },
+  "keywords": [
+    "cache",
+    "catbox",
+    "redis",
+    "replication",
+    "master",
+    "slave"
+  ],
+  "engines": {
+    "node": ">=0.10.30"
+  },
+  "dependencies": {
+    "redis": "^0.12.1",
+    "hoek": "^2.4.1"
+  },
+  "devDependencies": {
+    "catbox": "^3.4.2",
+    "chai": "^1.9.1",
+    "gulp-jsbeautifier": "0.0.2",
+    "gulp-eslint": "^0.1.8",
+    "gulp": "^3.8.7",
+    "gulp-diff": "^0.1.4",
+    "gulp-help": "^0.1.11",
+    "gulp-mocha": "^1.0.0",
+    "gulp-util": "^3.0.1",
+    "minimist": "^0.2.0",
+    "mocha": "^1.21.4"
+  },
+  "licenses": "MIT"
+}
