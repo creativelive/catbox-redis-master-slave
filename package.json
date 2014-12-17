@@ -1,7 +1,7 @@
 {
   "name": "catbox-redis-master-slave",
   "description": "Master-slave replicated Redis adapter for catbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Lei Pan <superpan@gmail.com> (http://github.com/superpan)",
   "repository": "git://github.com/creativelive/catbox-redis-master-slave",
   "main": "index.js",
