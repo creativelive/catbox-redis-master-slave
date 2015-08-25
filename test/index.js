@@ -1,4 +1,4 @@
-/*eslint-disable*/
+/*eslint no-unused-vars: 0*/
 'use strict';
 
 var expect = require('chai').expect;
@@ -388,7 +388,7 @@ describe('Redis', function() {
             });
         });
 
-        xit('sends auth command when password is provided', function(done) {
+        it.skip('sends auth command when password is provided', function(done) {
 
             var options = {
                 write: {
@@ -445,7 +445,7 @@ describe('Redis', function() {
 
     describe('#validateSegmentName', function() {
 
-        xit('returns an error when the name is empty', function(done) {
+        it.skip('returns an error when the name is empty', function(done) {
 
             var options = {
                 host: '127.0.0.1',
@@ -461,7 +461,7 @@ describe('Redis', function() {
             done();
         });
 
-        xit('returns an error when the name has a null character', function(done) {
+        it.skip('returns an error when the name has a null character', function(done) {
 
             var options = {
                 host: '127.0.0.1',
@@ -476,7 +476,7 @@ describe('Redis', function() {
             done();
         });
 
-        xit('returns null when there aren\'t any errors', function(done) {
+        it.skip('returns null when there aren\'t any errors', function(done) {
 
             var options = {
                 host: '127.0.0.1',

@@ -6,7 +6,10 @@ var diffReporter = require('gulp-diff').reporter;
 
 module.exports = function(gulp, conf) {
     gulp.task('beautify', function() {
-        var task = gulp.src(conf.build.lint)
+        var task = gulp.src(['!coverage/**/*',
+                '!node_modules/**/*.js',
+                '**/*.js'
+            ])
             .pipe(prettify({
                 config: '.jsbeautifyrc',
                 mode: 'VERIFY_AND_WRITE'
