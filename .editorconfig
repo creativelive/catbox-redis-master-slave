@@ -8,22 +8,10 @@ insert_final_newline = true
 ; indent style
 indent_style = space
 
-; language rules
-[*.html]
-indent_size = 4
-insert_final_newline = false
-
-[*.hbs]
-indent_size = 4
-insert_final_newline = false
-
 [*.js]
 indent_size = 4
 
 [*.json]
-indent_size = 2
-
-[*.less]
 indent_size = 2
 
 ; ignore third party

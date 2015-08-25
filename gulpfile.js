@@ -6,7 +6,6 @@ var path = require('path');
 var parseArgs = require('minimist');
 
 var conf = {
-    build: require('./conf/build'),
     args: parseArgs(process.argv.slice(2)),
     gwd: __dirname
 };
