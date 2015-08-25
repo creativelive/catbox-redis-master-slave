@@ -404,11 +404,11 @@ describe('Redis', function() {
 
             var redis = new Redis(options);
 
-            // var log = console.log;
-            // console.log = function(message) {
-            //     expect(message).to.contain('Warning');
-            //     console.log = log;
-            // };
+            var log = console.log;
+            console.log = function(message) {
+                expect(message).to.contain('Warning');
+                console.log = log;
+            };
 
             redis.start(function(err) {
                 done();
