@@ -24,8 +24,8 @@
     "node": ">=0.10.30"
   },
   "dependencies": {
-    "redis": "^0.12.1",
-    "hoek": "^2.14.0"
+    "redis": "^2.8.0",
+    "hoek": "^4.2.0"
   },
   "devDependencies": {
     "catbox": "^6.0.0",
